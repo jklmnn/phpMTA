@@ -14,3 +14,5 @@ This library addresses the password problem. With this authentication no passwor
 All pages that need authentication need to include `auth.php`. The `is_authenticated()` method returns `True` if the user is logged in and `False` if not.
 On the login page use `send_token()` which takes a mail address as POST argument and sends a random token to this email.The token is also sent via PHP to the `authenticate()` method which logs the user in and sets cookies.  
 To logout just call `deauthenticate()` which destroys the session and deletes the cookies.
+
+To configure the parameters see the values in `conf.php`.
